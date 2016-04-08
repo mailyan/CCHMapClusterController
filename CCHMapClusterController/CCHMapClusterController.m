@@ -43,7 +43,8 @@
 #define WORLD_MIN_LON -180
 #define WORLD_MAX_LON 180
 
-#define fequal(a, b) (fabs((a) - (b)) < __FLT_EPSILON__)
+#define ZOOM_LAT_EPSILON 0.0001
+#define fequal(a, b) (fabs((a) - (b)) < ZOOM_LAT_EPSILON)
 
 @interface CCHMapClusterController()<MKMapViewDelegate>
 
